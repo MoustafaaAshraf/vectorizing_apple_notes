@@ -2,8 +2,9 @@ import faiss
 import numpy as np
 from .vector_store import VectorStore
 
+
 class FaissStore(VectorStore):
-    def __init__(self, index_file='apple_notes_vectors.index'):
+    def __init__(self, index_file="apple_notes_vectors.index"):
         self.index_file = index_file
 
     def store(self, vectors):
