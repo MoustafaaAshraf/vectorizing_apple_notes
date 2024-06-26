@@ -9,3 +9,9 @@ help: ## Display this help
 
 pre-commit: ## Run pre-commit
 	@ ${POETRY} run pre-commit run --all-files
+
+install: ## Install dependencies
+	@ ${POETRY} install
+
+run: ## Run the application
+	@ ${POETRY} run python -m main
