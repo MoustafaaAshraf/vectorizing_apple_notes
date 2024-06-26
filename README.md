@@ -46,3 +46,5 @@ project_root/
     ├── main.py
     └── README.md
 ```
+TODO: Add a feature to convert .md apple notes to SQLite to mock the apple notes database
+TODO: Adapt main and extractor to read from the toy database
