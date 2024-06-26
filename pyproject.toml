@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vectorizing-apple-notes"
+version = "0.1.0"
+description = "Building vector database out of Apple Notes to be used for RAG application"
+authors = ["Moustafa <mosafehashf@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vectorizing_apple_notes"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "^4.41.2"
+torch = "^2.3.1"
+faiss-cpu = "1.7.3"
+numpy = "1.24.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pre-commit = "^3.7.1"
+commitizen = "^3.27.0"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
